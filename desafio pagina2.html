@@ -1,0 +1,159 @@
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+      <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body onmousemove="ver()">
+    <div id="seguir"></div>
+    <div  style=" position: relative;" id="ajustar">
+      <div id="menu_esquerdo">
+          <div id="infoesquerda">
+            <h1 id="numeros1">1</h1>
+            <div id="ocultar">
+              <h5 style="margin-top: 20px;">Passo 1</h5>
+              <h3 style="margin-top: -20px">Suas informações</h3>
+            </div>
+          </div>
+          <div id="infoesquerda" class="infoesquerda1">
+            <h1 id="numeros2" style="border: none;
+            background: rgb(116, 157, 245);
+            color: black;">2</h1>
+            <div id="ocultar">
+              <h5 style="margin-top: 20px;">Passo 2</h5>
+              <h3 style="margin-top: -20px">Selecionar plano</h3>
+            </div>
+          </div>
+          <div id="infoesquerda" clas="infoesquerda2">
+            <h1 id="numeros3">3</h1>
+            <div id="ocultar">
+              <h5 style="margin-top: 20px;">Passo 3</h5>
+              <h3 style="margin-top: -20px">Add</h3>
+            </div>
+          </div>
+          <div id="infoesquerda" id="infoesquerda3">
+            <h1 id="numeros4">4</h1>
+            <div id="ocultar">
+              <h5 style="margin-top: 20px;">Passo 4</h5>
+              <h3 style="margin-top: -20px">Ressumo</h3>
+            </div>
+          </div>
+      </div>
+      <div id="justificarprincipal">
+          <div id="principal">
+            <div id="teste2" >
+              <h1 style="color: rgb(6, 6, 133); font-family: huebr;">Selecione o seu plano</h1>
+              <h4>Você pode escolher o plano anual ou Mensal</h4>
+              <div id="opçoes">
+                <div id="iniciante" onclick="escolher(1)">
+                    <img src="img/icon-arcade.svg" alt="">
+                    <div id="divopçoes" style="border: none;">
+                      <h3 style="color: rgb(6, 6, 133); font-family: huebr; font-size: 18px;">Iniciante</h3>
+                      <h4 id="valor1" style="color: rgba(128, 128, 128, 0.562);">$9/mo</h4>
+                      <h4 id="ocultar00" style="color: rgba(128, 128, 128, 0.562); display: none;">$90/yr</h4>
+                      <h5 id="ocultar3" style="margin-top: -10px">2 meses gratis</h5>
+                    </div>
+                </div>
+                <div id="avançado" onclick="escolher(2)">
+                  <img src="img/icon-advanced.svg" alt="">
+                  <div id="divopçoes" style="border: none;">
+                    <h3 style="color: rgb(6, 6, 133); font-family: huebr; font-size: 18px;">Avançado</h3>
+                    <h4 id="valor1" style="color: rgba(128, 128, 128, 0.562);">$12/mo</h4>
+                    <h4 id="ocultar00" style="color: rgba(128, 128, 128, 0.562); display: none;">$120/yr</h4>
+                    <h5 id="ocultar3" style="margin-top: -10px">2 meses gratis</h5>
+                </div>
+                </div>
+                <div id="pro" onclick="escolher(3)">
+                  <img src="img/icon-pro.svg" alt="">
+                  <div id="divopçoes" style="border: none;">
+                    <h3 style="color: rgb(6, 6, 133); font-family: huebr; font-size: 18px;">Pró</h3>
+                    <h4 id="valor1" style="color: rgba(128, 128, 128, 0.562);">$15/mo</h4>
+                    <h4 id="ocultar00" style="color: rgba(128, 128, 128, 0.562); display: none;">$120/yr</h4>
+                    <h5 id="ocultar3" style="margin-top: -10px">2 meses gratis</h5>
+                  </div>
+                </div>
+                <p id="teste11"></p>
+              </div>
+              <div id="divswitch">
+                  <h6 style="margin-left: -10px; margin-right: 10px;">Mensal</h6>
+                  <label id="swith">
+                      <input id="myCheck" onclick="aparecer()" type="checkbox">
+                      <span id="slider"></span>
+                  </label>
+                  <h6 style="margin-left: 10px; margin-right: -10px;">Anual</h6>
+              </div>
+
+                  <div id="botao">
+                      
+                     <button onclick="ocultar(1)" id="teste22" type="submit" style="width: 120px; height: 40;">Proximo passo</button>
+                  
+                    </div>
+                  <div style="margin-top: -40px;" id="botao3">
+                   <a href="desafio 1.html"><button id="botaoesquerdo"  type="submit">Voltar</button></a>
+                  </div>
+            </div>
+          </div>
+          
+          <div id="principal2">
+            <div id="teste2" >
+              <h1 style="color: rgb(6, 6, 133); font-family: huebr;">Escolher complementos</h1>
+              <h4>Complementos ajudam melhorar a experiencia gamer</h4>
+
+              <div id="selecionar1">
+                          <label for="checkbox" style="margin-top: 10px; margin-left: 20px;">
+                            <input id="input1" onclick="escolher2()" type="checkbox">
+                          </label>
+                          <div style="display: flex; flex-direction: column; margin-left: 15px;">
+                              <h3 style="height: 0px;">Serviços online</h3>
+                              <h5 style="margin-top: 10px;">Acesso a jogos multiplayer</h5>
+                          </div>
+                          <span id="valor1" style="position:absolute;right: 10;">+1$/mo</span>
+                          <span id="valor2" style="position:absolute;right: 10;">+10$/yr</span>
+              </div>
+
+              <div id="selecionar2">
+                            <label for="checkbox" style="margin-top: 10px; margin-left: 20px;">
+                              <input id="input2" onclick="escolher2()"  type="checkbox">
+                            </label>
+                            <div style="display: flex; flex-direction: column; margin-left: 15px;">
+                                <h3 style="height: 0px;">Armazenamento grande</h3>
+                                <h5 style="margin-top: 10px;">1TB de armazenamento em nuvem</h5>
+                                
+                            </div>
+                            <span id="valor1" style="position:absolute;right: 10;">+2$/mo</span>
+                              <span id="valor2" style="position:absolute;right: 10;">+20$/yr</span>
+              </div>
+                  
+
+              <div id="selecionar3">
+                              <label for="checkbox" style="margin-top: 10px; margin-left: 20px;">
+                                <input id="input3" onclick="escolher2()" type="checkbox">
+                              </label>
+                              <div style="display: flex; flex-direction: column; margin-left: 15px;">
+                                  <h3 style="height: 0px;">Perfil customizavel</h3>
+                                  <h5 style="margin-top: 10px;">Temas customizaveis no seu perfil</h5>
+                                  
+                              </div>
+                              <span id="valor1" style="position:absolute;right: 10;">+3$/mo</span>
+                              <span id="valor2" style="position:absolute;right: 10;">+30$/yr</span>
+              </div>
+
+                  <div id="botao">
+                      
+                      <a><button id="teste22" type="submit" onclick="alerta()" style="width: 120px; height: 40;">Proximo passo</button></a>
+                  
+                    </div>
+                  <div style="margin-top: -40px;" id="botao3">
+                   <button onclick="ocultar(2)" id="botaoesquerdo"  type="submit">Voltar</button>
+                  </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="js.js">
+      
+
+    </script>
+  </body>
+</html>
